@@ -14,24 +14,24 @@ class FillLoginForm {
   private $database;
     
   /**
-    Initialize plugin for filling login form
-    @param $system - Set driver
-      server - MySQL
-      sqlite - SQLite3
-      sqlite2 - SQLite2
-      pgsql - PostgreeSQL
-      oracle - Oracle
-      mssql - MS SQL
-      firebird - Firebird (alpha)
-      simpledb - SimpleDB
-      mongo - MongoDB
-      elastic - Elasticsearch
-      
-    @param $server - Server to log in, default: localhost
-    @param $name - User name
-    @param $pass - Password to database
-    @param $database - Name of database
-  */    
+   * Initialize plugin for filling login form
+   * @param $system - Set driver
+   *   server - MySQL
+   *   sqlite - SQLite3
+   *   sqlite2 - SQLite2
+   *   pgsql - PostgreeSQL
+   *   oracle - Oracle
+   *   mssql - MS SQL
+   *   firebird - Firebird (alpha)
+   *   simpledb - SimpleDB
+   *   mongo - MongoDB
+   *   elastic - Elasticsearch
+   *   
+   * @param $server - Server to log in, default: localhost
+   * @param $name - User name
+   * @param $pass - Password to database
+   * @param $database - Name of database
+   */    
   public function __construct($system = "server", $server = false, $name = false, $pass = false, $database = false){
     $this->system = $system;
     $this->server = $server;
